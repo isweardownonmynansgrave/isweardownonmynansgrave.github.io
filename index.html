@@ -4,10 +4,11 @@
 		<link rel="stylesheet" href="/style.css">
    		 <title>Titel</title>
    		 <script>
-  	  		const image = document.getElementById("image1");
- 			image.addEventListener("mouseover", function() {
+  	  		function switchImg() {
+			 const image = document.getElementById("image1");
+ 			image.addEventListener("mouseover", switchImg() {
 			image.src = "kekw.png";
-	     		});
+			}
   		  </script>
 	</head>
 	<body>
@@ -16,10 +17,11 @@
          <a href="/tools1.html"><button type="button">tools1</button></a>
       </div>
 			 <div class="tripleCore">
-        <img src="riding_on_a_horstrich_by_mceric.jpg" id="image1">
+			
+        <img src="riding_on_a_horstrich_by_mceric.jpg" id="image1" onmouseover="switchImg()">
       </div>
-      <div class="tripleCore">
-        <a href="/quiz/quiz1.html"><button type="button">Quiz</button></a>
+      		<div class="tripleCore">
+       		<a href="/quiz/quiz1.html"><button type="button">Quiz</button></a>
       </div>
       	
 		</div>
