@@ -1,0 +1,14 @@
+body {
+  background-color: #aae5a4;
+}
+.tripleContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tripleCore {
+  margin: 0 auto;
+}
