@@ -8,8 +8,21 @@
   flex-direction: row;
   justify-content: space-between;
 }
-
 .tripleCore {
   margin: 0 auto;
   width: 33.33%;
+}
+.dcGray {
+  background-color: #36393e;
+}
+.dcDarkGray1 {
+  background-color: #282b30;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
