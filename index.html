@@ -3,7 +3,41 @@
 	<head>
 		<link rel="stylesheet" href="/style.css">
    		 <title>Titel</title>
-   		
+   		<style>
+			.image {
+				opacity: 1;
+ 				display: block;
+				width: 100%;
+  				height: auto;
+				transition: .5s ease;
+  				backface-visibility: hidden;
+			}
+			.middle {
+				transition: .5s ease;
+ 				opacity: 0;
+				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				-ms-transform: translate(-50%, -50%);
+  				text-align: center;
+			}
+
+			.container:hover .image {
+  				opacity: 0.3;
+			}
+
+			.container:hover .middle {
+  				opacity: 1;
+			}
+
+			.text {
+  				background-color: #04AA6D;
+ 				color: white;
+  				font-size: 16px;
+				padding: 16px 32px;
+			}
+		</style>
 	</head>
 	<body class="body1">
 		<div class="tripleContainer dcGray">
@@ -14,11 +48,17 @@
 			
         <a href="/quiz/quiz0.html"><img src="/m/riding_on_a_horstrich_by_mceric.jpg" style="height: 400px"></a>
       </div>
-      		<div class="tripleCore">
-       		<a href="/quiz/quiz1.html"><img src="/m/quiz.jpg" style="width: 33.33vw"></a>
-      </div>
+      	<div class="tripleCore">
+       		
+			<div class="container">
+ 		 		<img src="/m/quiz.jpg" alt="quiz.jpg not working" class="image" style="width: 33.33vw">
+		  		<div class="middle">
+  		  			<div class="text"><a href="/quiz/quiz1.html">Klick</a></div>
+ 				</div>
+			</div>
+      		</div>
       	
-		</div>
+	</div>
 		
 	</body>
 
