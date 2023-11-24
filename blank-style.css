@@ -43,7 +43,7 @@ a:hover {
   font-size: 20pt;
   font-style: oblique;
 }
-img:hover {
+#dog:hover {
   opacity: 0.3;
 }
 #tableUnten {
