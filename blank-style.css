@@ -1,5 +1,8 @@
 body {
-  background-color: #AAE4A5;
+  /*background-color: #AAE4A5;*/
+  background-image: url("https://scitechdaily.com/images/Total-Solar-Eclipse.gif");
+  background-size: cover;
+  color: white;
 }
 ul.menu-list {
   list-style-type: hebrew;
