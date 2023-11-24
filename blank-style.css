@@ -45,6 +45,7 @@ a:hover {
 }
 .dog:hover {
   opacity: 0.3;
+  transition: .5s ease;
 }
 #tableUnten {
   align: center;
