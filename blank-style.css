@@ -1,0 +1,48 @@
+body {
+  background-color: #AAE4A5;
+}
+ul.menu-list {
+  list-style-type: hebrew;
+}
+h1 {
+  color: red;
+}
+h2 {
+  color: blue;
+}
+h3{
+  color: orange;
+}
+p.Lorum-Text {
+  font-family: "Bagel Fat One", sans-serif;
+}
+.table-middle {
+  color: green;
+}
+.table-corner {
+  color: red;
+}
+.usefull:hover {
+  background-color: red;
+  opacity: 0.3;
+}
+a.usefull {
+  opacity: 1.0 !important;
+}
+#Third {
+  color: cyan;
+}
+a:hover {
+  color: cyan;
+}
+.important {
+  color: red;
+  font-size: 30pt;
+}
+.L-I {
+  font-size: 20pt;
+  font-style: oblique;
+}
+img:hover {
+  
+}
