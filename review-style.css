@@ -19,9 +19,13 @@ body {
 	width: 400px;
 }
 footer {
-	padding: 15px;
+	padding: 7px;
 	background-color: #AAE4A5;
 	color: black;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 }
 a {
 	color: white;
@@ -31,4 +35,8 @@ nav {
 }
 #title {
 	font-size: 64pt;
+}
+.image-hr {
+	padding-top: 20px;
+	padding-bottom: 2px;
 }
