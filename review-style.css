@@ -23,9 +23,11 @@ footer {
 	background-color: #AAE4A5;
 	color: black;
 	width: 100%;
+	/*
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	*/
 }
 a {
 	color: white;
