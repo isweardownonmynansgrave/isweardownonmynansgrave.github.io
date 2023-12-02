@@ -3,20 +3,38 @@
 <head>
 <title> Fake Seite </title>
 <style>
-    #disclaimer {
-        position: fixed;
-        bottom: 0;
-        left: 30%;
+    body {margin: 0;}#disclaimer {position: fixed;bottom: 0;left: 40%;}#corner {float: right;}#logo {position: absolute;left: 36.6%;top: 15.5%;}
+    #searchbar {
+        position: absolute;left: 34.5%;top: 39%;
+        border: 1px solid gray; border-radius: 25px; width: 30%; height: 46px;
+    }
+    #textArea{
+        width: 80%;resize: none;
+        padding: 9px 0px;
+        border: none;
+        font-size: 16pt;
+        
     }
 </style>
 </head>
 <body>
-    <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol1.png">
+    <img id="corner" src="https://biblehrer.github.io/Aufgaben/Grafiken/CornerSymbol.png">
+    
+
+    
     <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol2.png">
     <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol3.png">
-    <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol4.png">
-    <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol5.png">
-<div style="padding: 10px; border: 1px solid gray; border-radius: 5px;" > </div>
-
+        <img id="logo" src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif">
+        <div id="searchbar">
+            <!-- <div id="container"> -->
+                <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol1.png" style="padding-left: 4px;">
+                <textarea id="textArea" rows="1"></textarea>
+                <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol5.png" style="float: right;padding-right: 5px;">
+                <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol4.png" style="float: right;padding-right: 5px;">
+           <!--     </div> --> 
+        </div>
+    
+        
+    <p id="disclaimer">Disclaimer: Diese Seite stellt nicht die Suchmaschine Google dar.</p>
 </body>
 </html>

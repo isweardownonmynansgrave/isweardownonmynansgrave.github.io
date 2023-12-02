@@ -3,42 +3,34 @@
 <head>
 <title> Fake Seite </title>
 <style>
-    #corner {
-        float: right;
-    }
-    .middle {
-        display: flex;
-        justify-content: center;
-    }
-    #logo {
-        position: absolute;
-        left: 33%;
-        top: 25%;
-    }
-    #search {
-        position: absolute;
-        left: 30%;
-        top: 50%;
-    }
-    #disclaimer {
-        position: fixed;
-        bottom: 0;
-        left: 30%;
-    }
+    body {margin: 0;}
+    #corner {float: right;}
+    #logo {position: absolute;left: 36.6%;top: 15.5%;}
+    #search {position: absolute;left: 34.5%;top: 39%;}
+    #disclaimer {position: fixed;bottom: 0;left: 40%;}
+    #searchbar {position: absolute;left: 34.5%;top: 39%;border: 1px solid gray; border-radius: 25px; width: 31%; height: 46px;}
+    .icons {float: right;margin: 10px 15px 6px 5px;}
+    a:link {text-decoration: none;color: black;}
+    a:visited {color: black;}
+    a:hover {text-decoration: underline;}
 </style>
 </head>
 <body>
+    
+    <div style="padding-top: 22px;display: inline-block;"><a href="" style="padding-left: 24px;">Über Google</a><a href="" style="padding-left: 15px;">Store</a>
+        
+    </div>
     <img id="corner" src="https://biblehrer.github.io/Aufgaben/Grafiken/CornerSymbol.png">
-        <img id="logo" src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif">
-        <img id="search"src="https://biblehrer.github.io/Aufgaben/Grafiken/Searchbar.png">
-<!-- Dieser Teil gilt der Optionalen Aufgabe und kann nach Bedarf gelöscht werden
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol1.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol2.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol3.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol4.png">
-<img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol5.png">
-<div style="padding: 10px; border: 1px solid gray; border-radius: 5px;" > </div>
--->
-    <p id="disclaimer">Disclaimer: Diese Seite stellt nicht die Suchmaschine Google dar. Sie dient lediglich zu Übungszwecken. </p>
+    <img id="logo" src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif">
+        <!-- <img id="search"src="https://biblehrer.github.io/Aufgaben/Grafiken/Searchbar.png"> -->
+
+        <div id="searchbar">
+            <!-- <div id="container"> -->
+            <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol1.png" style="margin: 12px 0 0 12px;">
+            <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol5.png" class="icons" style="margin-left: 0;">
+            <img src="https://biblehrer.github.io/Aufgaben/Grafiken/Symbol4.png" class="icons">
+           <!--     </div> --> 
+        </div>
+    <p id="disclaimer">Disclaimer: Diese Seite stellt nicht die Suchmaschine Google dar.</p>
 </body>
 </html>
