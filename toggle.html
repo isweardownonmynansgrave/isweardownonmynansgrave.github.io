@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Toggle Dark Mode</title>
+        <style>
+            #logoWhite {position: absolute;left: 36.6%;top: 15.5%;}
+            #logoDark {position: absolute;left: 36.6%;top: 15.5%;display: none;}
+            .dark-mode {background-color: #202124;color: white;}
+        </style>
+    </head>
+    <body>
+        <button onclick="myToggle()">Toggle dark mode</button> <!--Kann mit anderen Button Arten Ersetzt werden-->
+        <img id="logoWhite" src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165-6752733080612631-cst.gif">
+        <img id="logoDark" src="https://www.google.com/logos/doodles/2023/seasonal-holidays-2023-6753651837110165.2-6752733080612634-cst.gif">
+        <script>
+            function myToggle() {
+                var y = document.getElementById("logoDark");
+                var x = document.getElementById("logoWhite");
+                var element = document.body;
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    y.style.display = "none";
+                    element.classList.toggle("dark-mode");
+                } else {
+                    x.style.display = "none";
+                    y.style.display = "block";
+                    element.classList.toggle("dark-mode");
+                }
+            }
+        </script>
+    </body>
+</html>
