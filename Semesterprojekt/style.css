@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+nav {
+    background-color: #36393e;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+#intro {background-color: rgba(0,0,0,0.3);
+    margin-top: 10vw;
+    margin-left: 8vw;
+    width: 20vw;
+    text-align: center;
+    }
+#klick:hover {
+    color: green;
+}
+.introText {
+    font-size: 40pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#settings {
+    float: right;
+    height: 40px;
+}
+#settingsIco {
+    height: 40px;
+    float: right;
+    padding-top: 3px;
+    padding-right: 3px;
+}
+.navbar {
+    height: 47px;
+}
+#navStart {
+    font-size: 26px;
+    float: left;
+    text-decoration: none;
+}
+#navStart:hover {
+    background-color: #7289da;
+}
+.navbar p {
+    margin: 0;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+#sidebar {
+    width: 30%;
+    float: left;
+}
+.ackerbauSBIcon {
+    height: 31.5%;
+    opacity: 0.65;
+}
+#maisIcon:hover {
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+#getreideIcon:hover {
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+#nutzpflanzenIcon:hover {
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
