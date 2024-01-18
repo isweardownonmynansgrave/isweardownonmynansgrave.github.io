@@ -4,6 +4,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: white;
+    background-color: #36393e;
 }
 .font-bebas {
     font-family: "Bebas Neue", sans-serif;
@@ -11,7 +12,7 @@ body {
     font-style: normal;
 }
 nav {
-    background-color: #36393e;
+    border-bottom: 2px solid black;
 }
 a:link {
     text-decoration: none;
@@ -61,9 +62,20 @@ a:visited {
     padding-right: 20px;
     padding-bottom: 3px;
 }
+#contentWrapper {
+    width: 100%;
+}
 #sidebar {
-    width: 30%;
+    width: 305px;
     float: left;
+    border-right: 2px solid black;
+}
+.contentArea {
+    background-color: white;
+    color: black;
+}
+.contentArea p {
+    margin: 0;
 }
 .ackerbauSBIcon {
     height: 31.5%;
