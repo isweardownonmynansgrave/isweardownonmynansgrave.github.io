@@ -25,6 +25,7 @@ a:visited {
     margin-left: 8vw;
     width: 20vw;
     text-align: center;
+    color: white;
     }
 #klick:hover {
     color: green;
