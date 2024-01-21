@@ -53,9 +53,6 @@ a:hover {
   opacity: 0.3;
   transition: .5s ease;
 }
-#tableUnten {
-  align: center;
-}
 .start, .middle {
   font-family: "Inconsolata", sans-serif;
 }

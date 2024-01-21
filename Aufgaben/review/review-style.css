@@ -5,8 +5,8 @@ body {
 	font-family: 'Chakra Petch', sans-serif;
 }
 .middle {
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 .text-Center {
 	text-align: center;
@@ -39,4 +39,32 @@ nav {
 .image-hr {
 	padding-top: 20px;
 	padding-bottom: 2px;
+}
+#whiteSpace {
+	width: 100%;
+	height: 150px;
+}
+aside {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+}
+aside p {
+	text-decoration: underline;
+}
+.previewBox {
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+.previewImg {
+	width: 150px;
+}
+#void {
+	height: 50px;
 }
