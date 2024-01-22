@@ -112,6 +112,15 @@ a:visited {
 .mainCore:hover {
     border-style: ridge;
 }
+#containerAckerbau {
+    display: none;
+}
+#containerFuttermittel {
+    display: none;
+}
+#containerNutzpflanzen {
+    display: none;
+}
 /*
 display: flex;
 flex-direction: column;
