@@ -68,12 +68,14 @@ a:visited {
 }
 #sidebar {
     width: 305px;
-    float: left;
     border-right: 2px solid black;
+    float: left;
 }
 .contentArea {
     background-color: white;
     color: black;
+    display: flex;
+    align-items: stretch;
 }
 .contentArea p {
     margin: 0;
@@ -120,6 +122,10 @@ a:visited {
 }
 #containerNutzpflanzen {
     display: none;
+}
+.actualContent {
+    display: flex;
+    align-items: center;
 }
 /*
 display: flex;

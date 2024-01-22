@@ -23,11 +23,10 @@
                 <img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/nutzpflanzenIconTr.png" onclick="switchContent(3)">
             </div>
             <div class="contentArea">
-                <p>Lorem ipsum lorem lorem</p>
-                <div id="containerDefault">Default</div>
-                <div id="containerAckerbau">Ackerfrüchte</div>
-                <div id="containerFuttermittel">Futtermittel</div>
-                <div id="containerNutzpflanzen">Nutzpflanzen</div>
+                <div id="containerDefault" class="actualContent">Default</div>
+                <div id="containerAckerbau" class="actualContent">Ackerfrüchte</div>
+                <div id="containerFuttermittel" class="actualContent">Futtermittel</div>
+                <div id="containerNutzpflanzen" class="actualContent">Nutzpflanzen</div>
             </div>
         </div>
         <script>
@@ -40,25 +39,28 @@
                 switch(x) {
                     case 1:
                         containerAckerbau.style.display = "block";
-                        containerTwo.style.display = "none";
-                        containerThree.style.display = "none";
+                        containerFutter.style.display = "none";
+                        containerNutzpflanzen.style.display = "none";
                         splash.style.display = "none";
+                        console.log(x);
                         break;
                     case 2:
                         containerAckerbau.style.display = "none";
-                        containerTwo.style.display = "block";
-                        containerThree.style.display = "none";
+                        containerFutter.style.display = "block";
+                        containerNutzpflanzen.style.display = "none";
+                        console.log(x);
                         break;
                     case 3:
                         containerAckerbau.style.display = "none";
-                        containerTwo.style.display = "none";
-                        containerThree.style.display = "block";
+                        containerFutter.style.display = "none";
+                        containerNutzpflanzen.style.display = "block";
+                        console.log(x);
                         break;
                     default:
                         splash.style.display = "block";
                         containerAckerbau.style.display = "none";
-                        containerTwo.style.display = "none";
-                        containerThree.style.display = "none";
+                        containerFutter.style.display = "none";
+                        containerNutzpflanzen.style.display = "none";
                 }
             }
         </script>
