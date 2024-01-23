@@ -14,5 +14,53 @@
                 <a href="impressum.html"><img id="settingsIco" src="bilder/settings.png"></a>
             </div>
         </nav>
+        <div id="contentWrapper">
+            <div id="sidebar">
+                <img class="ackerbauSBIcon" id="getreideIcon" src="bilder/weizenIconTr.png" onclick="switchContent(1)">
+                <img class="ackerbauSBIcon" id="maisIcon" src="bilder/maisIconTr.png" onclick="switchContent(2)">
+                <img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/nutzpflanzenIconTr.png" onclick="switchContent(3)">
+            </div>
+            <div class="contentArea">
+                <div id="containerDefault" class="actualContent">Default</div>
+                <div id="containerAckerbau" class="actualContent">Ackerfrüchte</div>
+                <div id="containerFuttermittel" class="actualContent">Futtermittel</div>
+                <div id="containerNutzpflanzen" class="actualContent">Nutzpflanzen</div>
+            </div>
+        </div>
+        <script>
+            var containerAckerbau = document.getElementById("containerAckerbau");
+            var containerFutter = document.getElementById("containerFuttermittel");
+            var containerNutzpflanzen = document.getElementById("containerNutzpflanzen");
+            var splash = document.getElementById("containerDefault");
+
+            function switchContent(x) {
+                switch(x) {
+                    case 1:
+                        containerAckerbau.style.display = "block";
+                        containerFutter.style.display = "none";
+                        containerNutzpflanzen.style.display = "none";
+                        splash.style.display = "none";
+                        console.log(x);
+                        break;
+                    case 2:
+                        containerAckerbau.style.display = "none";
+                        containerFutter.style.display = "block";
+                        containerNutzpflanzen.style.display = "none";
+                        console.log(x);
+                        break;
+                    case 3:
+                        containerAckerbau.style.display = "none";
+                        containerFutter.style.display = "none";
+                        containerNutzpflanzen.style.display = "block";
+                        console.log(x);
+                        break;
+                    default:
+                        splash.style.display = "block";
+                        containerAckerbau.style.display = "none";
+                        containerFutter.style.display = "none";
+                        containerNutzpflanzen.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
