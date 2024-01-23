@@ -9,7 +9,7 @@
     </head>
     <body>
         <nav>
-            <div class="navbar">
+            <div class="navbar font-bebas">
                 <div id="navStart"><a href="main.html"><p>☰ Übersicht</p></a></div>
                 <a href="impressum.html"><img id="settingsIco" src="bilder/settings.png"></a>
             </div>
@@ -27,40 +27,6 @@
                 <div id="containerNutzpflanzen" class="actualContent">Nutzpflanzen</div>
             </div>
         </div>
-        <script>
-            var containerAckerbau = document.getElementById("containerAckerbau");
-            var containerFutter = document.getElementById("containerFuttermittel");
-            var containerNutzpflanzen = document.getElementById("containerNutzpflanzen");
-            var splash = document.getElementById("containerDefault");
-
-            function switchContent(x) {
-                switch(x) {
-                    case 1:
-                        containerAckerbau.style.display = "block";
-                        containerFutter.style.display = "none";
-                        containerNutzpflanzen.style.display = "none";
-                        splash.style.display = "none";
-                        console.log(x);
-                        break;
-                    case 2:
-                        containerAckerbau.style.display = "none";
-                        containerFutter.style.display = "block";
-                        containerNutzpflanzen.style.display = "none";
-                        console.log(x);
-                        break;
-                    case 3:
-                        containerAckerbau.style.display = "none";
-                        containerFutter.style.display = "none";
-                        containerNutzpflanzen.style.display = "block";
-                        console.log(x);
-                        break;
-                    default:
-                        splash.style.display = "block";
-                        containerAckerbau.style.display = "none";
-                        containerFutter.style.display = "none";
-                        containerNutzpflanzen.style.display = "none";
-                }
-            }
-        </script>
+        
     </body>
 </html>

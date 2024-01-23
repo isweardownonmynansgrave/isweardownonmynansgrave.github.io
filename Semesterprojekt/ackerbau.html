@@ -10,7 +10,7 @@
    
     <body>
         <nav>
-            <div class="navbar">
+            <div class="navbar font-bebas">
                 <div id="navStart"><a href="main.html"><p>☰ Übersicht</p></a></div>
                 <a href="impressum.html"><img id="settingsIco" src="bilder/settings.png"></a>
             </div>
@@ -18,9 +18,9 @@
        <!--NAVBAR ENDE-->
         <div id="contentWrapper">
             <div id="sidebar">
-                <img class="ackerbauSBIcon" id="getreideIcon" src="bilder/weizenIconTr.png" onclick="switchContent(1)">
-                <img class="ackerbauSBIcon" id="maisIcon" src="bilder/maisIconTr.png" onclick="switchContent(2)">
-                <img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/nutzpflanzenIconTr.png" onclick="switchContent(3)">
+                <div id="getreideDiv"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/weizenIconTr.png" onclick="switchContent(1)"></div>
+                <div id="futtermittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/maisIconTr.png" onclick="switchContent(2)"></div>
+                <div id="nutzpflanzenDiv"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/nutzpflanzenIconTr.png" onclick="switchContent(3)"></div>
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">Default</div>
@@ -36,24 +36,37 @@
             var splash = document.getElementById("containerDefault");
 
             function switchContent(x) {
+                var get = document.getElementById("getreideDiv");
+                var fut = document.getElementById("futtermittelDiv");
+                var nut = document.getElementById("nutzpflanzenDiv");
                 switch(x) {
+
                     case 1:
                         containerAckerbau.style.display = "block";
                         containerFutter.style.display = "none";
                         containerNutzpflanzen.style.display = "none";
                         splash.style.display = "none";
+                        get.style.backgroundColor = "#7289da";
+                        fut.style.backgroundColor = "#36393e";
+                        nut.style.backgroundColor = "#36393e";
                         console.log(x);
                         break;
                     case 2:
                         containerAckerbau.style.display = "none";
                         containerFutter.style.display = "block";
                         containerNutzpflanzen.style.display = "none";
+                        get.style.backgroundColor = "#36393e";
+                        fut.style.backgroundColor = "#7289da";
+                        nut.style.backgroundColor = "#36393e";
                         console.log(x);
                         break;
                     case 3:
                         containerAckerbau.style.display = "none";
                         containerFutter.style.display = "none";
                         containerNutzpflanzen.style.display = "block";
+                        get.style.backgroundColor = "#36393e";
+                        fut.style.backgroundColor = "#36393e";
+                        nut.style.backgroundColor = "#7289da";
                         console.log(x);
                         break;
                     default:
