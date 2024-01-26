@@ -19,7 +19,14 @@
         <!-- <video autoplay muted loop id="impVideo">
             <source src="bilder/Fendt-1000-Vario.mp4" type="video/mp4">
         </video> -->
-            <div id="impWrapper">
+            <div id="impWrapper" class="font-bebas">
+                <div id="actualCreds">
+                    <p>Semesterprojekt von bbm3h23awe - Lukas Weber</p>
+                    <p>Thema: Landwirtschaft</p>
+                    <p>Fach: Webdesign mit HTML/CSS</p>
+                    <p>Dozent: Stefan Gerstner</p>
+                </div>
+                <div class="whitespace100px"></div>
                 <div id="impCredits" class="font-bebas">
                     <div id="creds">
                         <p>Für dieses Projekt wurden keine Medien lizensiert.</p>
@@ -34,8 +41,9 @@
                         <label for="toggle1">
                             <span class="font-bebas">Quellen</span>
                         </label>
-                        <div class="sourceContainer">
+                        <div class="sourceContainer" id="sourceContainer">
                             <p>Artjem, geboren in Moskau</p>
+                            <ul id="sourceList"></ul>
                         </div>
                     </div>
                 </div>
@@ -53,7 +61,6 @@
                 "https://i.etsystatic.com/8157623/r/il/0f607d/2536535705/il_fullxfull.2536535705_bzz2.jpg",
                 "https://milkcreekdairy.com/",
                 "https://www.treehugger.com/how-long-do-chickens-live-4859423",
-                "https://www.treehugger.com/thmb/ncKCGJPCQSF6UOc7CZNIOVPoiCk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2020__03__rhode-island-hen-7f9b1b93dba8401999c52f85096fbe6c.jpg",
                 "https://i.auto-bild.de/ir_img/1/4/6/7/4/5/5/ba521457b0c45e43.jpg?impolicy=leadteaser",
                 "https://www.autobild.de/artikel/traktor-fendt-1050-vario-fahrbericht-8576509.html",
                 "https://i.etsystatic.com/19543171/r/il/213881/5198632987/il_1140xN.5198632987_rfr3.jpg",
@@ -72,12 +79,15 @@
                 "https://www.youtube.com/watch?v=u2yIZYTkn-A",
                 "https://www.youtube.com/watch?v=FuOI_p3zXDE"
                 ];
-                document.getElementById("sourceContainer").innerHTML = list;
-                this.body.innerHTML = list;
-                //for(var i=0; i<list.length;i++){
-                //    console.log(list[i]);
-                //    document.getElementById("sourceContainer").innerHTML = '<a href="' + list[i] + '">' + list[i] + '</a>';
-                //}
+                var sourceListElement = document.getElementById("sourceList");
+                for(var i=0; i<list.length;i++){
+                    console.log(list[i]);
+                    var a = document.createElement("a");
+                    a.href = list[i];
+                    a.textContent = list[i];
+                    document.getElementById("sourceContainer").appendChild(a);
+                    document.getElementById("sourceContainer").appendChild(document.createElement("br"));
+                }
             </script>
     </body>
 </html>

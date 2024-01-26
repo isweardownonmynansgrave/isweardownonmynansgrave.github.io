@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: red; /*Nur zu Testzwecken*/
+            }
+            #video {
+                position: fixed; /* alternativ sticky? */
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+        </style>
+    </head>
+        <body>
+            <div id="videoContainer">
+                <video autoplay muted id="video">
+                    <source src="m/loadingScreen1.mp4" type="video/mp4"> <!--src durch eigenen Pfad ersetzen-->
+                </video>
+            </div>
+            <script>
+                document.getElementById('video').addEventListener('ended',myHandler,false);
+    
+                function myHandler(e) {
+                    document.getElementById("videoContainer").style.display = "none";
+                }
+            </script>
+        </body>
+</html>
