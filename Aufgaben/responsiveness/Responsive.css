@@ -1,8 +1,12 @@
 body {
     margin: 0;
     padding: 60px 100px 20px;
+    background-color: rgb(55, 55, 55) !important;
+    color: white !important;
 }
+.burger {
 
+}
 .menu-list {
     float: right;
 }
@@ -22,7 +26,8 @@ header h1 {
 }
 
 .round-white-box {
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
+    background-color: rgb(88, 88, 88) !important;
 }
 
 .main-flexbox {
@@ -55,4 +60,24 @@ header h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media screen and (max-width: 1280px) {
+.main-flexbox {
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.main-image {
+    width: 90%;
+    height: auto;
+}
+.main-button {
+    width: 80%;
+}
+nav {
+    display: none;
+}
+h1 {
+    
+}
 }
