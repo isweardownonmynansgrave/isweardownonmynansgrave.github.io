@@ -18,6 +18,7 @@
        <!--NAVBAR ENDE-->
         <div id="contentWrapper">
             <div id="sidebar">
+                <div id="reset" class="resetSidebar"><p onclick="switchContent()">Auswahl zurücksetzen</p></div>
                 <div id="grundlagenDiv"><img class="ackerbauSBIcon" id="grundlagenIcon" src="" onclick="switchContent(4)"></div>
                 <div id="getreideDiv"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/weizenIconTr.png" onclick="switchContent(1)"></div>
                 <div id="futtermittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/maisIconTr.png" onclick="switchContent(2)"></div>
@@ -25,13 +26,15 @@
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">Default</div>
+                <div id="containerGrundlagen" class="actualContent">Grundlagen</div>
                 <div id="containerGetreide" class="actualContent">Getreide</div>
                 <div id="containerFuttermittel" class="actualContent">Futtermittel</div>
                 <div id="containerNutzpflanzen" class="actualContent">Nutzpflanzen</div>
             </div>
         </div>
         <script>
-            var containerAckerbau = document.getElementById("containerAckerbau");
+            var containerGrundlagen = document.getElementById("containerGrundlagen");
+            var containerGetreide = document.getElementById("containerGetreide");
             var containerFutter = document.getElementById("containerFuttermittel");
             var containerNutzpflanzen = document.getElementById("containerNutzpflanzen");
             var splash = document.getElementById("containerDefault");
@@ -39,50 +42,55 @@
             var get = document.getElementById("getreideDiv");
             var fut = document.getElementById("futtermittelDiv");
             var nut = document.getElementById("nutzpflanzenDiv");
+            var y = "#7289da";
+            var n = "#36393e";
 
             function switchContent(x) { 
+                console.log(x);
                 switch(x) {
-
                     case 1:
                         containerGrundlagen.style.display = "none";
                         containerGetreide.style.display = "block";
                         containerFutter.style.display = "none";
                         containerNutzpflanzen.style.display = "none";
                         splash.style.display = "none";
-                        gru.style.backgroundColor = "";
-                        get.style.backgroundColor = "#7289da";
-                        fut.style.backgroundColor = "#36393e";
-                        nut.style.backgroundColor = "#36393e";
+                        gru.style.backgroundColor = n;
+                        get.style.backgroundColor = y;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = n;
                         break;
                     case 2:
                         containerGrundlagen.style.display = "none";
                         containerGetreide.style.display = "none";
                         containerFutter.style.display = "block";
                         containerNutzpflanzen.style.display = "none";
-                        gru.style.backgroundColor = "";
-                        get.style.backgroundColor = "#36393e";
-                        fut.style.backgroundColor = "#7289da";
-                        nut.style.backgroundColor = "#36393e";
+                        splash.style.display = "none";
+                        gru.style.backgroundColor = n;
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = y;
+                        nut.style.backgroundColor = n;
                         break;
                     case 3:
                         containerGrundlagen.style.display = "none";
                         containerGetreide.style.display = "none";
                         containerFutter.style.display = "none";
                         containerNutzpflanzen.style.display = "block";
-                        gru.style.backgroundColor = "";
-                        get.style.backgroundColor = "#36393e";
-                        fut.style.backgroundColor = "#36393e";
-                        nut.style.backgroundColor = "#7289da";
+                        splash.style.display = "none";
+                        gru.style.backgroundColor = n;
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = y;
                         break;
                     case 4:
                         containerGrundlagen.style.display = "block";
                         containerGetreide.style.display = "none";
                         containerFutter.style.display = "none";
                         containerNutzpflanzen.style.display = "none";
-                        gru.style.backgroundColor = "";
-                        get.style.backgroundColor = "#36393e";
-                        fut.style.backgroundColor = "#36393e";
-                        nut.style.backgroundColor = "#36393e";
+                        splash.style.display = "none";
+                        gru.style.backgroundColor = y;
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = n;
                         break;
                     default:
                         splash.style.display = "block";
@@ -90,6 +98,10 @@
                         containerGetreide.style.display = "none";
                         containerFutter.style.display = "none";
                         containerNutzpflanzen.style.display = "none";
+                        gru.style.backgroundColor = n;
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = n;
                 }
             }
         </script>

@@ -116,13 +116,14 @@ a:visited {
 .mainCore:hover {
     border-style: ridge;
 }
-#containerAckerbau {
-    display: none;
+.resetSidebar {
+    padding: 5px;
+    text-align: center;
 }
-#containerFuttermittel {
-    display: none;
+.resetSidebar:hover {
+    background-color: #7289da;
 }
-#containerNutzpflanzen {
+#containerGrundlagen, #containerGetreide, #containerNutzpflanzen, #containerFuttermittel {
     display: none;
 }
 .actualContent {
@@ -184,8 +185,3 @@ a:visited {
     min-width: 100%;
     min-height: 100%;
 }
-/*
-position: absolute;
-    top: 0;
-    left: 0;
-*/
