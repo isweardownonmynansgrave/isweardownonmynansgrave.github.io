@@ -21,9 +21,12 @@ nav {
 a:link {
     text-decoration: none;
 }
+/*.blurIcon a:visited {
+    color: black;
+}
 a:visited {
     color: white;
-}
+}*/
 #intro {
     background-color: rgba(0,0,0,0.3);
     margin-top: 10vw;
@@ -86,7 +89,7 @@ a:visited {
     /*width: 500px; 
     height: 300px;*/
     /*dynamische größe*/
-    width: 25%;
+    width: 30%;
     height: auto;
     min-height: 300px;
 
@@ -96,10 +99,12 @@ a:visited {
     color: black;
 }
 .blurIcon p {
-    font-size: 20pt;
+    font-size: 25pt;
 }
 .blurImg {
-    width: 90%;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .containerBlur .blurIcon {
     transition: .5s ease-in-out;
