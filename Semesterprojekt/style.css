@@ -25,8 +25,8 @@ a:visited {
     color: white;
 }
 #indexWrapper {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 #intro {
     position: relative;
@@ -67,7 +67,7 @@ a:visited {
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 26px;
+    font-size: 32px;
     text-decoration: none;
 }
 #navStart:hover {
@@ -171,8 +171,8 @@ a:visited {
     border-style: ridge;
 }
 .resetSidebar {
-    padding: 5px;
     text-align: center;
+    height: 5vh;
 }
 .resetSidebar:hover {
     background-color: #7289da;
