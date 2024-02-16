@@ -92,4 +92,7 @@ header h1 {
 header {
     text-align: center;
 }
+.burger {
+    display: inline-block;
+}
 }

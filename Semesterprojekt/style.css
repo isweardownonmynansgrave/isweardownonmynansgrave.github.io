@@ -189,6 +189,13 @@ a:visited {
 .actualContent {
     display: flex;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+.actualContent ul {
+    text-align: left;
 }
 #impWrapper {
     display: flex;
