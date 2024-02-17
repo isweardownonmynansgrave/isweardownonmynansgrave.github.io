@@ -22,6 +22,11 @@ body {
     width: 33.33%;
     font-size: 30pt;
 }
+.tripleCore a:hover {
+    background-color: #46494e;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
 a:link {
     text-decoration: none;
 }
