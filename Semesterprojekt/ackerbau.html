@@ -13,7 +13,7 @@
     <body>
         <nav>
             <div class="navbar font-bebas">
-                <div id="navStart"><a href="main.html"><p>☰ Übersicht</p></a></div>
+                <div id="navStart dropbtn"><a href="main.html"><p>☰ Übersicht</p></a></div>
                 <a href="impressum.html"><img id="settingsIco" src="bilder/settings.png"></a>
             </div>
         </nav>
@@ -36,7 +36,7 @@
                         Nachfolgend werden die Grundlagen des Ackerbaus erläutert
                     </p>
                     <p>
-                        Grundsätzlich gilt das Prinzip: Anpflanzen -> In Schuss halten -> Ernte einfahren. 
+                        Grundsätzlich gilt das Prinzip:<br>Anpflanzen -> In Schuss halten -> Ernte einfahren.<br>
                         Theoretisch ist das richtig, doch gehört in der Praxis meist mehr dazu. Um einen Acker auch effektiv bewirtschaften zu können, 
                         bedarf es einiger Arbeitsschritte:
                     </p>
@@ -181,6 +181,25 @@
                         nut.style.backgroundColor = n;
                 }
             }
+            /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
         </script>
     </body>
 </html>

@@ -129,7 +129,6 @@ a:visited {
     transition: .5s ease-in-out;
 }
 .containerBlur:hover .blurIcon {
-    filter: blur(10px);
     transform: scale(.9);
     opacity: .5;
 }
@@ -138,6 +137,9 @@ a:visited {
     transform: scale(1.2);
     opacity: 1;
 }
+/*.containerBlur:hover .blurIcon:hover > .containerBlur{
+    filter: blur(10px);
+}*/
 #contentWrapper {
     width: 100%;
     height: 92%;
@@ -165,6 +167,10 @@ a:visited {
 .ackerbauSBIcon {
    width: 250px;
 }
+.ackerbauSBIcon:hover a {
+    background-color: rgba(250, 235, 215, 0.8);
+    color: black;
+}
 .mainContainer {
     width: 100%;
     border-bottom: 2px dotted black;
@@ -183,13 +189,6 @@ a:visited {
 .mainCore:hover {
     border-style: ridge;
 }
-.resetSidebar {
-    text-align: center;
-    height: 5vh;
-}
-.resetSidebar:hover {
-    background-color: antiquewhite;
-}
 #containerGrundlagen, #containerGetreide, #containerNutzpflanzen, #containerFuttermittel {
     display: none;
 }
@@ -205,12 +204,17 @@ a:visited {
     justify-content: center;
     min-width: 100%;
     height: 7%;
+    text-align: center;
 }
 #sidebar a {
     min-width: 100%;
 }
 #reset {
     background-color: #36393e;
+}
+#reset:hover {
+    background-color: rgba(250, 235, 215, 0.8);
+    color: black;
 }
 .actualContent {
     display: flex;
@@ -287,4 +291,51 @@ a:visited {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+@media screen and (max-width: 1000px) {
+    .containerBlur {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .blurIcon {
+        width: 50vw;
+    }
+    .blurWrapper {
+        display: flex;
+        justify-content: center;
+        overflow-y: auto;
+    }
 }
