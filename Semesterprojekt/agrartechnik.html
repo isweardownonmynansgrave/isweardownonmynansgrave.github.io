@@ -18,17 +18,68 @@
        <!--NAVBAR ENDE-->
         <div id="contentWrapper">
             <div id="sidebar">
-                <img class="ackerbauSBIcon" id="getreideIcon" src="bilder/weizenIconTr.png" onclick="switchContent(1)">
-                <img class="ackerbauSBIcon" id="maisIcon" src="bilder/maisIconTr.png" onclick="switchContent(2)">
-                <img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/nutzpflanzenIconTr.png" onclick="switchContent(3)">
+                <a id="ico1" onclick="switchContent(1)"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/tbdGBasic.png"></a>
+                <a id="ico2" onclick="switchContent(2)"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/tbdGBasic.png"></a>
+                <a id="ico3" onclick="switchContent(3)"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/tbdGBasic.png"></a>
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">Default</div>
-                <div id="containerMaissilage" class="actualContent">Maissilage</div>
-                <div id="containerGraeser" class="actualContent">Heu & Gräser</div>
-                <div id="containerNutzpflanzen" class="actualContent">Nutzpflanzen</div>
+                <div id="containerZugmaschinen" class="actualContent">Zug- & Erntemaschinen</div>
+                <div id="containerAnbaugeraete" class="actualContent">Anbaugeräte</div>
+                <div id="containerStalltechnik" class="actualContent">Stalltechnik</div>
             </div>
         </div>
-        
+        <script>
+            var containerZugmaschinen = document.getElementById("containerZugmaschinen");
+            var containerAnbaugeraete = document.getElementById("containerAnbaugeraete");
+            var containerStalltechnik = document.getElementById("containerStalltechnik");
+            var splash = document.getElementById("containerDefault");
+            var get = document.getElementById("ico1"); /*getElementById("getreideDiv");*/
+            var fut = document.getElementById("ico2");
+            var nut = document.getElementById("ico3");
+            var y = "antiquewhite";
+            var n = "#36393e";
+
+            function switchContent(x) { 
+                console.log(x);
+                switch(x) {
+                    case 1:
+                        containerZugmaschinen.style.display = "block";
+                        containerAnbaugeraete.style.display = "none";
+                        containerStalltechnik.style.display = "none";
+                        splash.style.display = "none";
+                        get.style.backgroundColor = y;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = n;
+                        break;
+                    case 2:
+                        containerZugmaschinen.style.display = "none";
+                        containerAnbaugeraete.style.display = "block";
+                        containerStalltechnik.style.display = "none";
+                        splash.style.display = "none";
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = y;
+                        nut.style.backgroundColor = n;
+                        break;
+                    case 3:
+                        containerZugmaschinen.style.display = "none";
+                        containerAnbaugeraete.style.display = "none";
+                        containerStalltechnik.style.display = "block";
+                        splash.style.display = "none";
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = y;
+                        break;
+                    default:
+                        containerZugmaschinen.style.display = "none";
+                        containerAnbaugeraete.style.display = "none";
+                        containerStalltechnik.style.display = "none";
+                        splash.style.display = "block";
+                        get.style.backgroundColor = n;
+                        fut.style.backgroundColor = n;
+                        nut.style.backgroundColor = n;
+                }
+            }
+        </script>
     </body>
 </html>
