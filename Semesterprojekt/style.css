@@ -164,6 +164,8 @@ a:visited {
 }
 .ackerbauSBIcon {
    width: 250px;
+   user-select: none;
+   -webkit-user-drag: none;
 }
 .mainContainer {
     width: 100%;
@@ -205,12 +207,13 @@ a:visited {
     justify-content: center;
     min-width: 100%;
     height: 7%;
+    background-color: #36393e;
 }
 #sidebar a {
     min-width: 100%;
 }
-#reset {
-    background-color: #36393e;
+#reset:hover {
+    background-color: antiquewhite;
 }
 .actualContent {
     display: flex;
