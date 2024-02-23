@@ -206,17 +206,11 @@ a:visited {
     justify-content: center;
     min-width: 100%;
     height: 7%;
-<<<<<<< HEAD
     background-color: #36393e;
-=======
     text-align: center;
->>>>>>> a8cfde02ed6824c4a0934791a218f37d10981217
 }
 #sidebar a {
     min-width: 100%;
-}
-#reset:hover {
-    background-color: antiquewhite;
 }
 #reset:hover {
     background-color: rgba(250, 235, 215, 0.8);
