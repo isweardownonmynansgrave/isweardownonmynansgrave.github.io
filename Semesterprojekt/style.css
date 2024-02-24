@@ -1,7 +1,7 @@
 body {
     margin: 0;
     color: white;
-    overflow: hidden;
+    overflow: auto;
     font-family: "Vollkorn", serif;
     font-size: 18px;
 }
@@ -70,24 +70,13 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-#navStart {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    font-size: 32px;
-    text-decoration: none;
-}
-#navStart:hover {
-    background-color: antiquewhite;
-}
-#navStart:hover p {
-    color: black;
+    
 }
 .navbar p {
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 4vh;
 }
 .blurWrapper { 
     display: flex;
@@ -104,14 +93,9 @@ a:visited {
     width: 100%;
 }
 .blurIcon { 
-    /*statische größe*/
-    /*width: 500px; 
-    height: 300px;*/
-    /*dynamische größe*/
     width: 30%;
     height: auto;
     min-height: 300px;
-
     text-align: center;
     background-color: white;
     border-radius: 20px;
@@ -153,10 +137,8 @@ a:visited {
     background-color: #36393e;
     display: flex;
     flex-wrap: wrap;
-    
 }
 .contentArea {
-    
     color: black;
     display: flex;
     align-items: stretch;
@@ -169,27 +151,9 @@ a:visited {
    user-select: none;
    -webkit-user-drag: none;
 }
-.ackerbauSBIcon:hover a {
-    background-color: rgba(250, 235, 215, 0.8);
-    color: black;
-}
-.mainContainer {
-    width: 100%;
-    border-bottom: 2px dotted black;
-    display: flex;
-    justify-content: space-around;
-}
-.mainCore {
-    font-size: 25pt;
-    border: 3px hidden;  
-    text-align: center;
-    margin-bottom: 10px;
-}
-.mainCore p {
-    margin-bottom: 10px;
-}
-.mainCore:hover {
-    border-style: ridge;
+#ico1:hover, #ico2:hover, #ico3:hover {
+    background-color: rgb(172, 159, 142);
+    cursor: pointer;
 }
 #containerGrundlagen, #containerGetreide, #containerNutzpflanzen, #containerFuttermittel {
     display: none;
@@ -213,8 +177,9 @@ a:visited {
     min-width: 100%;
 }
 #reset:hover {
-    background-color: rgba(250, 235, 215, 0.8);
+    background-color: rgb(172, 159, 142);
     color: black;
+    cursor: pointer;
 }
 .actualContent {
     display: flex;
@@ -280,7 +245,7 @@ a:visited {
     font-size: 30pt;
 }
 .sourceWrapper span:hover {
-    background-color: antiquewhite;
+    background-color: rgb(172, 159, 142);
 }
 .whitespace100px {
     height: 100px;
@@ -292,16 +257,22 @@ a:visited {
     min-width: 100%;
     min-height: 100%;
 }
+#navStart {
+    height: 100%;
+    width: 305px;
+}
 .dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
     border: none;
     cursor: pointer;
   }
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+  .dropbtn:hover {
+    background-color: rgb(172, 159, 142);
+    color: black;
   }
   .dropdown {
     position: relative;
@@ -310,7 +281,8 @@ a:visited {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: antiquewhite;
+    width: 305px;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -320,22 +292,29 @@ a:visited {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
+    text-align: center;
     display: block;
   }
-  .dropdown a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: rgb(172, 159, 142);}
   .show {display: block;}
-@media screen and (max-width: 1000px) {
+
+  /*Responsiveness für main.html*/
+@media screen and (max-width: 1100px) {
     .containerBlur {
         display: flex;
         flex-direction: column;
         width: auto;
     }
     .blurIcon {
-        width: 50vw;
+        width: 40vw;
+        min-height: 40px;
+        margin: 20px 0 30px 0;
     }
     .blurWrapper {
         display: flex;
         justify-content: center;
+    }
+    body {
         overflow-y: auto;
     }
 }
