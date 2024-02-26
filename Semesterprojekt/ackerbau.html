@@ -20,21 +20,21 @@
                 <a href="main.html">Main</a>
                 <a href="ackerbau.html">Ackerbau</a>
                 <a href="agrartechnik.html">Agrartechnik</a>
-                <a href="nutztierhaltung.html">Nutztierhaltung</a>
+                <a href="nutztierhaltung.html">nutztierhaltung</a>
             </div>
         </nav>
        <!--NAVBAR ENDE-->
         <div id="contentWrapper">
             <div id="sidebar">
                 <div id="reset" class="resetSidebar"><p onclick="switchContent()">Auswahl zurücksetzen</p></div>
-                <a id="ico1" onclick="switchContent(1)"><div id="getreideDiv"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/ackerbau/weizenIconTr.png"></div></a>
-                <a id="ico2" onclick="switchContent(2)"><div id="futtermittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/ackerbau/maisIconTr.png"></div></a>
-                <a id="ico3" onclick="switchContent(3)"><div id="nutzpflanzenDiv"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/ackerbau/nutzpflanzenIconTr.png"></div></a>
+                <a id="ico1" onclick="switchContent(1)"><div id="i1reideDiv"><img class="ackerbauSBIcon" id="i1reideIcon" src="bilder/ackerbau/weizenIconTr.png"></div></a>
+                <a id="ico2" onclick="switchContent(2)"><div id="i2termittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/ackerbau/maisIconTr.png"></div></a>
+                <a id="ico3" onclick="switchContent(3)"><div id="i3zpflanzenDiv"><img class="ackerbauSBIcon" id="i3zpflanzenIcon" src="bilder/ackerbau/nutzpflanzenIconTr.png"></div></a>
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">
                     <p>
-                        Willkommen auf der Infoseite zum Thema Ackerbau. Sie können zwischen den Unterthemen Getreide, Futtermittel sowie Nutzpflanzen wählen. 
+                        Willkommen auf der Infoseite zum Thema Ackerbau. Sie können zwischen den Unterthemen Getreide, Futtermittel sowie i3zpflanzen wählen. 
                         Auswahl per Icon in der Sidebar.
                     </p>
                     <div class="whiteSpace100px"></div>
@@ -47,10 +47,10 @@
                         bedarf es einiger Arbeitsschritte:
                     </p>
                 </div>
-                <div id="containerGetreide" class="actualContent">
+                <div id="content1" class="actualContent">
                     <p>
-                        Ackerfrüchte gibt es viele, unter dem Begriff Getreide fasst man allerdings die meist einjährigen Süßgräser und deren Körner zusammen. 
-                        Die neun grundlegenden Getreidesorten bilden dabei:
+                        Ackerfrüchte gibt es viele, unter dem Begriff i1reide fasst man allerdings die meist einjährigen Süßgräser und deren Körner zusammen. 
+                        Die neun grundlegenden i1reidesorten bilden dabei:
                     </p>
                     <ul>
                         <li>
@@ -78,7 +78,7 @@
                             <span class="listStart">Hafer</span> - 
                         </li>
                         <li>
-                            <span class="listStart">Hirse</span> - Ein weit verbreitetes, glutenfreies Getreide, das eher in den USA als Europa kultiviert wird. 
+                            <span class="listStart">Hirse</span> - Ein weit verbreitetes, glutenfreies i1reide, das eher in den USA als Europa kultiviert wird. 
                             Hirse wird oft für Cornflakes (entgegen des Namens) verwendet, aber auch zur Tiermästung. 
                             Des weiteren findet Sie Anwendung in der Kosmetikindustrie, da die Hirse-Extrakte und Öle 
                             hautpflegend wirken.
@@ -102,7 +102,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="containerFuttermittel" class="actualContent">
+                <div id="content2" class="actualContent">
                     <p>
                         Wie in „Getreide“ beschrieben werden viele Ackerfrüchte an Tiere verfüttert. 
                         Dies wird nun etwas vertieft:
@@ -119,14 +119,14 @@
                             (mehr zum Ernteprozess unter Agrartechnik). [BILD Maishäckselgut]
                         </li>
                         <li>
-                            <span class="listStart">Corn-Cob-Mix</span> - Kurz CCM, ist eine Futtermischung bei dem Sowohl die Körner als auch der Strunk zu Schrot 
+                            <span class="listStart">Corn-Cob-Mix</span> - Kurz CCM, ist eine i2termischung bei dem Sowohl die Körner als auch der Strunk zu Schrot 
                             verarbeitet werden. Dieses Schrot, oder auch CCM-Silage, wird in Silos zu 
                             Konservierungszwecken fermentiert. Es besticht durch seine herausragenden Energiewerte 
                             und wird daher überwiegend in der Schweinemast, seltener auch in der Rinderzucht, verfüttert.
                         </li>
                     </ul>
                 </div>
-                <div id="containerNutzpflanzen" class="actualContent">
+                <div id="content3" class="actualContent">
                     <p></p>
                     <ul>
                         <li>Baumwolle</li>
@@ -137,13 +137,13 @@
             </div>
         </div>
         <script>
-            var containerGetreide = document.getElementById("containerGetreide");
-            var containerFutter = document.getElementById("containerFuttermittel");
-            var containerNutzpflanzen = document.getElementById("containerNutzpflanzen");
+            var c1 = document.getElementById("content1");
+            var c2 = document.getElementById("content2");
+            var c3 = document.getElementById("content3");
             var splash = document.getElementById("containerDefault");
-            var get = document.getElementById("ico1"); /*getElementById("getreideDiv");*/
-            var fut = document.getElementById("ico2");
-            var nut = document.getElementById("ico3");
+            var i1 = document.getElementById("ico1"); /*i1ElementById("i1reideDiv");*/
+            var i2 = document.getElementById("ico2");
+            var i3 = document.getElementById("ico3");
             var y = "antiquewhite";
             var n = "#36393e";
 
@@ -151,46 +151,46 @@
                 console.log(x);
                 switch(x) {
                     case 1:
-                        containerGetreide.style.display = "block";
-                        containerFutter.style.display = "none";
-                        containerNutzpflanzen.style.display = "none";
+                        c1.style.display = "block";
+                        c2.style.display = "none";
+                        c3.style.display = "none";
                         splash.style.display = "none";
-                        get.style.backgroundColor = y;
-                        fut.style.backgroundColor = n;
-                        nut.style.backgroundColor = n;
+                        i1.style.backgroundColor = y;
+                        i2.style.backgroundColor = n;
+                        i3.style.backgroundColor = n;
                         break;
                     case 2:
-                        containerGetreide.style.display = "none";
-                        containerFutter.style.display = "block";
-                        containerNutzpflanzen.style.display = "none";
+                        c1.style.display = "none";
+                        c2.style.display = "block";
+                        c3.style.display = "none";
                         splash.style.display = "none";
-                        get.style.backgroundColor = n;
-                        fut.style.backgroundColor = y;
-                        nut.style.backgroundColor = n;
+                        i1.style.backgroundColor = n;
+                        i2.style.backgroundColor = y;
+                        i3.style.backgroundColor = n;
                         break;
                     case 3:
-                        containerGetreide.style.display = "none";
-                        containerFutter.style.display = "none";
-                        containerNutzpflanzen.style.display = "block";
+                        c1.style.display = "none";
+                        c2.style.display = "none";
+                        c3.style.display = "block";
                         splash.style.display = "none";
-                        get.style.backgroundColor = n;
-                        fut.style.backgroundColor = n;
-                        nut.style.backgroundColor = y;
+                        i1.style.backgroundColor = n;
+                        i2.style.backgroundColor = n;
+                        i3.style.backgroundColor = y;
                         break;
                     default:
-                        containerGetreide.style.display = "none";
-                        containerFutter.style.display = "none";
-                        containerNutzpflanzen.style.display = "none";
+                        c1.style.display = "none";
+                        c2.style.display = "none";
+                        c3.style.display = "none";
                         splash.style.display = "block";
-                        get.style.backgroundColor = n;
-                        fut.style.backgroundColor = n;
-                        nut.style.backgroundColor = n;
+                        i1.style.backgroundColor = n;
+                        i2.style.backgroundColor = n;
+                        i3.style.backgroundColor = n;
                 }
             }
             
             /*Dropdown Menü ein- und ausklappen*/
             function toggleDropdown() {
-                document.getElementById("myDropdown").classList.toggle("show");
+                document.i1ElementById("myDropdown").classList.toggle("show");
             }
         </script>
     </body>

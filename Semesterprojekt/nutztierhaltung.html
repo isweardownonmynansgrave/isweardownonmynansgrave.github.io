@@ -20,9 +20,75 @@
                 <a href="nutztierhaltung.html">Nutztierhaltung</a>
             </div>
         </nav>
+        <div id="contentWrapper">
+            <div id="sidebar">
+                <div id="reset" class="resetSidebar"><p onclick="switchContent()">Auswahl zurücksetzen</p></div>
+                <a id="ico1" onclick="switchContent(1)"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/tbdGBasic.png"></a>
+                <a id="ico2" onclick="switchContent(2)"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/tbdGBasic.png"></a>
+                <a id="ico3" onclick="switchContent(3)"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/tbdGBasic.png"></a>
+            </div>
+            <div class="contentArea">
+                <div id="containerDefault" class="actualContent">Default</div>
+                <div id="c1" class="actualContent">Nutztier1</div>
+                <div id="c2" class="actualContent">Nutztier2</div>
+                <div id="c3" class="actualContent">Nutztier3</div>
+            </div>
+        </div>
         <script>
+            var c1 = document.i1ElementById("content1");
+            var c2 = document.i1ElementById("content2");
+            var c3 = document.i1ElementById("content3");
+            var splash = document.i1ElementById("containerDefault");
+            var i1 = document.i1ElementById("ico1"); /*i1ElementById("i1reideDiv");*/
+            var i2 = document.i1ElementById("ico2");
+            var i3 = document.i1ElementById("ico3");
+            var y = "antiquewhite";
+            var n = "#36393e";
+
+            function switchContent(x) { 
+                console.log(x);
+                switch(x) {
+                    case 1:
+                        c1.style.display = "block";
+                        c2.style.display = "none";
+                        c3.style.display = "none";
+                        splash.style.display = "none";
+                        i1.style.backgroundColor = y;
+                        i2.style.backgroundColor = n;
+                        i3.style.backgroundColor = n;
+                        break;
+                    case 2:
+                        c1.style.display = "none";
+                        c2.style.display = "block";
+                        c3.style.display = "none";
+                        splash.style.display = "none";
+                        i1.style.backgroundColor = n;
+                        i2.style.backgroundColor = y;
+                        i3.style.backgroundColor = n;
+                        break;
+                    case 3:
+                        c1.style.display = "none";
+                        c2.style.display = "none";
+                        c3.style.display = "block";
+                        splash.style.display = "none";
+                        i1.style.backgroundColor = n;
+                        i2.style.backgroundColor = n;
+                        i3.style.backgroundColor = y;
+                        break;
+                    default:
+                        c1.style.display = "none";
+                        c2.style.display = "none";
+                        c3.style.display = "none";
+                        splash.style.display = "block";
+                        i1.style.backgroundColor = n;
+                        i2.style.backgroundColor = n;
+                        i3.style.backgroundColor = n;
+                }
+            }
+            
+            /*Dropdown Menü ein- und ausklappen*/
             function toggleDropdown() {
-                document.getElementById("myDropdown").classList.toggle("show");
+                document.i1ElementById("myDropdown").classList.toggle("show");
             }
         </script>
     </body>
