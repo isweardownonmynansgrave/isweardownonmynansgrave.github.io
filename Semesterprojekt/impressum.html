@@ -8,35 +8,40 @@
         <meta charset="UTF-8">
     </head>
    
-    <body>
+    <body id="impBody">
         <nav>
             <div class="navbar font-bebas">
-                <div id="navStart"><a href="main.html"><p>☰ Übersicht</p></a></div>
-                <a href="impressum.html"><img id="settingsIco" src="bilder/settings.png"></a>
+                <div id="navStart" class="dropbtn" onclick="toggleDropdown()"><p id="uebersicht">☰ Übersicht</p><p id="uebersichtKurz">☰</p></div>
+                <div id="navImp"><a>Impressum</a></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="main.html">Main</a>
+                <a href="ackerbau.html">Ackerbau</a>
+                <a href="agrartechnik.html">Agrartechnik</a>
+                <a href="nutztierhaltung.html">Nutztierhaltung</a>
             </div>
         </nav>
         <!-- NAVBAR Ende-->
         <!-- <video autoplay muted loop id="impVideo">
             <source src="bilder/Fendt-1000-Vario.mp4" type="video/mp4">
         </video> -->
-            <div id="impWrapper" class="font-bebas">
-                <div id="actualCreds">
-                    <p>Semesterprojekt von bbm3h23awe - Lukas Weber</p>
+            <div id="impWrapper" class="font-bebas impC">
+                <section id="impC1" class="impC">
+                    <p class="text-center">Semesterprojekt von Lukas Weber - bbm3h23awe</p>
                     <p>Thema: Landwirtschaft</p>
                     <p>Fach: Webdesign mit HTML/CSS</p>
                     <p>Dozent: Stefan Gerstner</p>
-                    <p>Verwendete Tags (15): html, head, title, link, meta, body, nav, div, p, a, img, ul, li, span, script</p>
-                </div>
-                <div class="whitespace100px"></div>
-                <div id="impCredits" class="font-bebas">
-                    <div id="creds">
-                        <p>Für dieses Projekt wurden keine Medien lizensiert.</p>
-                        <p>Grüße gehen raus an diverse Unternehmen, eure Bilder und Informationen werden gut dienen.</p>
-                        <p>Props gehen raus an Taya.</p>
-                    </div>
-                    <img src="https://media3.giphy.com/media/kqzL9sYIf9Ml2/200.webp?cid=ecf05e47ifqxab8tlxry3onhl8hmm7y021bjmlrh0evn5tlw&ep=v1_gifs_search&rid=200.webp&ct=g">
-                </div>
-                <div class="whitespace100px"></div>
+                    <p>Verwendete Tags (17): html, head, title, link, meta, body, nav, div, p, a, br, img, ul, li, span, section, script</p>
+                </section>
+                <section id="impC2" class="font-bebas impC">
+                        <p>Vielen Dank an Taisia für die collapsible Container</p>
+                        <p>Medien von anderen Unternehmen werden ebenfalls bei diesem Projekt verwendet.</p>
+                        <img src="https://i.makeagif.com/media/12-21-2022/cGmeKp.gif" alt="Für rein akademische Zwecke"/>
+                </section>
+                <section id="impC3" class="impC">
+                    <p>Details dazu unter "Quellen"</p>
+                    <img src="https://media3.giphy.com/media/kqzL9sYIf9Ml2/200.webp?cid=ecf05e47ifqxab8tlxry3onhl8hmm7y021bjmlrh0evn5tlw&ep=v1_gifs_search&rid=200.webp&ct=g" alt="tobi eine möfe"/>
+                </section>
                 <div>
                     <input type="checkbox" id="toggle1" class="toggle-checkbox">
                     <div class="sourceWrapper">
@@ -80,14 +85,15 @@
                 "https://www.youtube.com/watch?v=u2yIZYTkn-A",
                 "https://www.youtube.com/watch?v=FuOI_p3zXDE"
                 ];
-                var sourceListElement = document.getElementById("sourceList");
                 for(var i=0; i<list.length;i++){
-                    console.log(list[i]);
                     var a = document.createElement("a");
                     a.href = list[i];
                     a.textContent = list[i];
                     document.getElementById("sourceContainer").appendChild(a);
                     document.getElementById("sourceContainer").appendChild(document.createElement("br"));
+                }
+                function toggleDropdown() {
+                    document.getElementById("myDropdown").classList.toggle("show");
                 }
             </script>
     </body>

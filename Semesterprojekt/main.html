@@ -11,8 +11,14 @@
     <body>
         <nav>
             <div class="navbar font-bebas">
-                <div id="navStart"><a href="main.html"><p>☰ Übersicht</p></a></div>
-                <a href="impressum.html"><img id="settingsIco" src="bilder/settings.png"></a>
+                <div id="navStart" class="dropbtn" onclick="toggleDropdown()"><p id="uebersicht">☰ Übersicht</p><p id="uebersichtKurz">☰</p></div>
+                <div id="navImp"><p>Impressum</p></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="main.html">Main</a>
+                <a href="ackerbau.html">Ackerbau</a>
+                <a href="agrartechnik.html">Agrartechnik</a>
+                <a href="nutztierhaltung.html">Nutztierhaltung</a>
             </div>
         </nav>
         <div class="blurWrapper font-bebas">

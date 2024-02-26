@@ -13,8 +13,8 @@
     <body>
         <nav>
             <div class="navbar font-bebas">
-                <div id="navStart" class="dropbtn" onclick="toggleDropdown()"><p>☰ Übersicht</p></div>
-                <div><p>Impressum</p></div>
+                <div id="navStart" class="dropbtn" onclick="toggleDropdown()"><p id="uebersicht">☰ Übersicht</p><p id="uebersichtKurz">☰</p></div>
+                <div id="navImp"><p>Impressum</p></div>
             </div>
             <div id="myDropdown" class="dropdown-content">
                 <a href="main.html">Main</a>
@@ -190,9 +190,6 @@
             
             /*Dropdown Menü ein- und ausklappen*/
             function toggleDropdown() {
-                var x = 0;
-                x = document.getElementById("navStart").style.width;
-                console.log(x);
                 document.getElementById("myDropdown").classList.toggle("show");
             }
         </script>

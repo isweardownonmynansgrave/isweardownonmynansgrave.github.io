@@ -5,9 +5,6 @@ body {
     font-family: "Vollkorn", serif;
     font-size: 18px;
 }
-html {
-    background-color: antiquewhite;
-}
 .font-bebas {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -35,16 +32,33 @@ a:visited {
 #indexWrapper {
     min-width: 100%;
     min-height: 100%;
+    overflow-y: hidden;
+}
+#indexVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 #intro {
     position: relative;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     top: 15vh;
     left: 8vw;
     width: 20vw;
     text-align: center;
     color: white;
     }
+    #intro2 {
+        position: relative;
+        background-color: rgba(0,0,0,0.6);
+        top: 15vh;
+        left: 4vw;
+        width: 35vw;
+        text-align: center;
+        color: white;
+        }
 #steak:hover {
     color: red;
 }
@@ -70,7 +84,7 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    border-bottom: 1px solid black;
 }
 .navbar p {
     margin: 0;
@@ -137,6 +151,7 @@ a:visited {
     background-color: #36393e;
     display: flex;
     flex-wrap: wrap;
+    transition: .4s ease-in-out;
 }
 .contentArea {
     color: black;
@@ -150,9 +165,10 @@ a:visited {
    width: 250px;
    user-select: none;
    -webkit-user-drag: none;
+
 }
 #ico1:hover, #ico2:hover, #ico3:hover {
-    background-color: rgb(172, 159, 142);
+    /*background-color: rgb(172, 159, 142);*/
     cursor: pointer;
 }
 #containerGrundlagen, #containerGetreide, #containerNutzpflanzen, #containerFuttermittel {
@@ -202,6 +218,9 @@ a:visited {
     font-style: medium;
     font-size: 25px;
 }
+#impBody {
+    background-color: #36393e;
+}
 #impWrapper {
     display: flex;
     flex-direction: column;
@@ -209,13 +228,24 @@ a:visited {
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
-    background-color: #f5f5f59f;
+    background-color: antiquewhite;
     color: black;
 }
-#impCredits {
-    font-size: 14pt;
+.text-center {
+    text-align: center;
+}
+.impC { /*Impressum Container*/
+    margin-bottom: 50px;
+}
+#impC1 {
+    text-align: left;
+}
+#impC3 {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 .toggle-checkbox {
     display:none;
@@ -297,7 +327,9 @@ a:visited {
   }
   .dropdown-content a:hover {background-color: rgb(172, 159, 142);}
   .show {display: block;}
-
+#uebersichtKurz {
+    display: none;
+}
   /*Responsiveness für main.html*/
 @media screen and (max-width: 1100px) {
     .containerBlur {
@@ -316,5 +348,21 @@ a:visited {
     }
     body {
         overflow-y: auto;
+    }
+    #uebersichtKurz {
+        display: block;
+        font-size: 10vh;
+    }
+    #uebersicht {
+        display: none;
+    }
+    #myDropdown a {
+        font-size: 4vh;
+    }
+    #navImp p{
+        font-size: 10vh;
+    }
+    .navbar {
+        height: 12vh;
     }
 }
