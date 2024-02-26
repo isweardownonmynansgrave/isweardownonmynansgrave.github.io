@@ -1,66 +1,54 @@
 <!doctype HTML>
-<html>
+<html lang="en">
 	<head>
-		<link rel="stylesheet" href="/style.css">
-   		 <title>Titel</title>
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   		 <title>Index</title>
    		<style>
-			.image {
-				opacity: 1;
- 				display: block;
+			body {
+				background-color: #36393e;
+			}
+			.font-bebas {
+    			font-family: "Bebas Neue", sans-serif;
+    			font-weight: 400;
+    			font-style: normal;
+			}
+			header {
+				background-color: antiquewhite;
+				text-align: center;
+				font-size: 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				width: 100%;
-  				height: auto;
-				transition: .5s ease;
-  				backface-visibility: hidden;
+				height: 15vh;
+				border-bottom: 2px solid black;
 			}
-			.middle {
-				transition: .5s ease;
- 				opacity: 0;
-				position: relative;
-  				top: 25%;
-  				left: 50%;
-  				transform: translate(-50%, -50%);
-  				-ms-transform: translate(-50%, -50%);
-				
-  				text-align: center;
+			#wrapper {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				margin-top: 100px;
 			}
-
-			.container:hover .image {
-  				opacity: 0.3;
+			#wrapper a {
+				font-size: 50px;
+				color: white;
+				text-decoration: none;
 			}
-
-			.container:hover .middle {
-  				opacity: 1;
-			}
-
-			.text {
-  				background-color: #aae5a4;
- 				color: white;
-  				font-size: 16px;
-				padding: 16px 32px;
-			}
+			a:visited {text-decoration: none;}
 		</style>
 	</head>
-	<body class="body1">
-		<div class="tripleContainer dcGray">
-			<div class="tripleCore" style="position: relative">
-         			<a href="/tools1.html"><button type="button" class="center">tools1</button></a>
-    			</div>
-			 <div class="tripleCore">
-        			<a href="/quiz/quiz0.html"><img src="/m/riding_on_a_horstrich_by_mceric.jpg" style="height: 400px"></a>
-      			</div>
-      			<div class="tripleCore">
-				<div class="container">
- 		 			<img src="/m/quiz.jpg" alt="quiz.jpg not working" class="image" style="width: 33.33vw">
-		  			<div class="middle">
-  		  				<div class="text"><a href="/quiz/quiz1.html">Klick</a></div>
- 					</div>
-				</div>
-      			</div>
-      			<div class="tripleCore">
-				<a href="/blank.html">Blank Aufgabe</a>
-      			</div>
+	<body>
+		<header class="font-bebas">
+			<p>Index - Github Repository - bbm3h23awe/Lukas Weber</p>
+		</header>
+		<div id="wrapper" class="font-bebas">
+			<div><a href="https://github.com/isweardownonmynansgrave/isweardownonmynansgrave.github.io">Github Repository</a></div>
+			<div><a href="Semesterprojekt/index.html">Semesterprojekt Webseite</a></div>
+			
 		</div>
-		
 	</body>
 
 </html>
