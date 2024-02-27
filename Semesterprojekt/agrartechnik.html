@@ -25,14 +25,47 @@
         <div id="contentWrapper">
             <div id="sidebar">
                 <div id="reset" class="resetSidebar"><p onclick="switchContent()">Auswahl zurücksetzen</p></div>
-                <a id="ico1" onclick="switchContent(1)"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/tbdGBasic.png"></a>
-                <a id="ico2" onclick="switchContent(2)"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/tbdGBasic.png"></a>
-                <a id="ico3" onclick="switchContent(3)"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/tbdGBasic.png"></a>
+                <a id="ico1" onclick="switchContent(1)"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/tbdGBasic.png" alt="" /></a>
+                <a id="ico2" onclick="switchContent(2)"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/tbdGBasic.png" alt="" /></a>
+                <a id="ico3" onclick="switchContent(3)"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/tbdGBasic.png" alt="" /></a>
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">Default</div>
-                <div id="content1" class="actualContent">Zug- & Erntemaschinen</div>
-                <div id="content2" class="actualContent">Anbaugeräte</div>
+                <div id="content1" class="actualContent">
+                    <p>Erntemaschinen</p>
+                    <ul>
+                        <li>
+                            <span class="listStart">Mähdrescher</span> - Sie sind die ikonischsten unter den Erntemaschinen. Der Begriff beschrieb dabei ursprünglich die typischen Ernteaufsätze (Bild links) 
+                            mit den Messern unten, die den Halm abschneiden, und der Dreschtrommel, die das geerntete Getreide in die Maschine befördert. 
+                            Ebenfalls werden Mähdrescher mit Maisgebissen (Bild rechts) betrieben, um Körnermais und seltener Sonnenblumen zu ernten. 
+                            Dabei wird, wie bei anderen Getreidesorten auch, über eine Reihe Rüttelsiebe und weitere Mechanismen das pure Korn 
+                            von der restlichen Biomasse getrennt. Diese wird kleingehäckselt oder als Stroh hinter dem Drescher ausgeworfen.
+                        </li>
+                        <li>
+                            <span class="listStart">Häcksler</span> - Entgegen dem Drescher wird hier die ganze Pflanze verwertet. Mit dem Schneidwerk (Bild rechts) werden 
+                            die Pflanzen abgeschnitten und mithilfe der Zahnräder und Förderschnecke in den Häcksler gesogen. Dort wird die 
+                            Pflanze im Ganzen auf die gewünschte Größe gehäckselt. Beim Mais z.B. bedeutet es Blätter, Stamm sowie Kolben. 
+                            Ferner werden diese Maschinen auch mit Gehölzen, wie Pappeln, fertig. Der Häcksler ist also ein zentrales Gerät 
+                            bei der Ernte von Pflanzen zur Energiegewinnung.
+                        </li>
+                        <li>
+                            <span class="listStart">Andere</span> - Für einige Fruchtsorten werden spezialisierte Erntemaschinen eingesetzt. Für Baumwolle (Bild links) gibt es 
+                            Teil- oder Vollernter mit Kompressionsmodul. Über Spiralschnecken wird die Pflanzenfaser gepflückt. 
+                            Beim Weinanbau (Bild rechts) wird stattdessen ein Traubenvollernter über die Reihe geführt, um die Früchte „abzustreifen“. 
+                        </li>
+                    </ul><span class="listStart"></span>
+                </div>
+                <div id="content2" class="actualContent">
+                    <p>Zugmaschinen & Anbaugeräte</p>
+                    <ul>
+                        <li>
+
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </div>
                 <div id="content3" class="actualContent">Stalltechnik</div>
             </div>
         </div>
@@ -41,7 +74,7 @@
             var c2 = document.getElementById("content2");
             var c3 = document.getElementById("content3");
             var splash = document.getElementById("containerDefault");
-            var i1 = document.getElementById("ico1"); /*i1ElementById("i1reideDiv");*/
+            var i1 = document.getElementById("ico1");
             var i2 = document.getElementById("ico2");
             var i3 = document.getElementById("ico3");
             var y = "antiquewhite";
