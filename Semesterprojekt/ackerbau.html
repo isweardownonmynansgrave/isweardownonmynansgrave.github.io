@@ -27,9 +27,9 @@
         <div id="contentWrapper">
             <div id="sidebar">
                 <div id="reset" class="resetSidebar"><p onclick="switchContent()">Auswahl zurücksetzen</p></div>
-                <a id="ico1" onclick="switchContent(1)"><div id="i1reideDiv"><img class="ackerbauSBIcon" id="i1reideIcon" src="bilder/ackerbau/weizenIconTr.png"></div></a>
-                <a id="ico2" onclick="switchContent(2)"><div id="i2termittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/ackerbau/maisIconTr.png"></div></a>
-                <a id="ico3" onclick="switchContent(3)"><div id="i3zpflanzenDiv"><img class="ackerbauSBIcon" id="i3zpflanzenIcon" src="bilder/ackerbau/nutzpflanzenIconTr.png"></div></a>
+                <a id="ico1" onclick="switchContent(1)"><div id="getreideDiv"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/ackerbau/weizenIconTr.png"></div></a>
+                <a id="ico2" onclick="switchContent(2)"><div id="futtermittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/ackerbau/maisIconTr.png"></div></a>
+                <a id="ico3" onclick="switchContent(3)"><div id="nutzpflanzenDiv"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/ackerbau/nutzpflanzenIconTr.png"></div></a>
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">
@@ -50,7 +50,7 @@
                 <div id="content1" class="actualContent">
                     <p>
                         Ackerfrüchte gibt es viele, unter dem Begriff i1reide fasst man allerdings die meist einjährigen Süßgräser und deren Körner zusammen. 
-                        Die neun grundlegenden i1reidesorten bilden dabei:
+                        Die neun grundlegenden Getreidesorten bilden dabei:
                     </p>
                     <ul>
                         <li>
@@ -190,7 +190,7 @@
             
             /*Dropdown Menü ein- und ausklappen*/
             function toggleDropdown() {
-                document.i1ElementById("myDropdown").classList.toggle("show");
+                document.getElementById("myDropdown").classList.toggle("show");
             }
         </script>
     </body>
