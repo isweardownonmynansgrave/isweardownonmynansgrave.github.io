@@ -43,9 +43,15 @@ Bodenbearbeitung
 -Tiefenlockerer
 
 Unkrautbekämpfung
+-Striegel
 -Feldspritze
 
 Düngung
 -Güllefass
 -Miststreuer
 -Düngerstreuer
+
+Stalltechnik
+-Melkstand
+-Futterroboter
+-BGA
