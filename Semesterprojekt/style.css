@@ -174,7 +174,7 @@ a:visited {
 #content1, #content2, #content3 {
     display: none;
 }
-#getreideDiv, #futtermittelDiv, #nutzpflanzenDiv {
+#ico1, #ico2, #ico3 {
     min-width: 100%;
     display: flex;
     justify-content: center;
@@ -188,9 +188,6 @@ a:visited {
     height: 7%;
     background-color: #36393e;
     text-align: center;
-}
-#sidebar a {
-    min-width: 100%;
 }
 #reset:hover {
     background-color: rgb(172, 159, 142);
@@ -216,6 +213,22 @@ a:visited {
     font-weight: 500;
     font-style: medium;
     font-size: 25px;
+}
+.contentImgSingle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentImgSingle img {
+    max-height: 300px;
+}
+.contentImgMulti {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contentImgMulti img {
+    max-height: 300px;
 }
 #impBody {
     background-color: #36393e;

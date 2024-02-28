@@ -1,0 +1,51 @@
+Ackerbau
+-Weizen
+-ROggen
+-Dinkel
+-Gerste
+-Hafer
+-Hirse
+-Mais
+-Reis
+
+
+Futtermittel
+-Körnergetreide (-Mix?)
+-Maissilage (+Silo?)
+-CCM
+
+Nutzpflanzen
+-Baumwolle
+-Gewürze/Pfefferbaum
+-Wein-(reben/fässer/keller)
+
+
+Agrartechnik
+Erntemaschinen
+-Mähdrescher
+--Schneidwerk+Dreschtrommel Closeup
+--Maisgebiss
+-Häcksler
+--Schneidwerk
+--Turm
+-Baumwollvollernter
+-Traubenvollernter
+
+Zugmaschinen & Anbaugeräte
+Grünlandtechnik
+-Mähwerk
+-Schwader
+-Ballenpresse
+
+Bodenbearbeitung
+-Pflug
+-Grubber
+-Tiefenlockerer
+
+Unkrautbekämpfung
+-Feldspritze
+
+Düngung
+-Güllefass
+-Miststreuer
+-Düngerstreuer

@@ -20,21 +20,21 @@
                 <a href="main.html">Main</a>
                 <a href="ackerbau.html">Ackerbau</a>
                 <a href="agrartechnik.html">Agrartechnik</a>
-                <a href="nutztierhaltung.html">nutztierhaltung</a>
+                <a href="nutztierhaltung.html">Nutztierhaltung</a>
             </div>
         </nav>
        <!--NAVBAR ENDE-->
         <div id="contentWrapper">
             <div id="sidebar">
                 <div id="reset" class="resetSidebar"><p onclick="switchContent()">Auswahl zurücksetzen</p></div>
-                <a id="ico1" onclick="switchContent(1)"><div id="getreideDiv"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/ackerbau/weizenIconTr.png"></div></a>
-                <a id="ico2" onclick="switchContent(2)"><div id="futtermittelDiv"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/ackerbau/maisIconTr.png"></div></a>
-                <a id="ico3" onclick="switchContent(3)"><div id="nutzpflanzenDiv"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/ackerbau/nutzpflanzenIconTr.png"></div></a>
+                <div id="ico1" onclick="switchContent(1)"><img class="ackerbauSBIcon" id="getreideIcon" src="bilder/ackerbau/weizenIconTr.png" /></div>
+                <div id="ico2" onclick="switchContent(2)"><img class="ackerbauSBIcon" id="maisIcon" src="bilder/ackerbau/maisIconTr.png" /></div>
+                <div id="ico3" onclick="switchContent(3)"><img class="ackerbauSBIcon" id="nutzpflanzenIcon" src="bilder/ackerbau/nutzpflanzenIconTr.png" /></div>
             </div>
             <div class="contentArea">
                 <div id="containerDefault" class="actualContent">
                     <p>
-                        Willkommen auf der Infoseite zum Thema Ackerbau. Sie können zwischen den Unterthemen Getreide, Futtermittel sowie i3zpflanzen wählen. 
+                        Willkommen auf der Infoseite zum Thema Ackerbau. Sie können zwischen den Unterthemen Getreide, Futtermittel sowie Nutzpflanzen wählen. 
                         Auswahl per Icon in der Sidebar.
                     </p>
                     <div class="whiteSpace100px"></div>
@@ -51,30 +51,37 @@
                     <p>
                         Ackerfrüchte gibt es viele, unter dem Begriff Getreide fasst man allerdings die meist einjährigen Süßgräser und deren Körner zusammen. 
                         Die neun grundlegenden Getreidesorten bilden dabei:
-                    </p>
+                    </p><!--<div class="contentImgSingle"></div>
+                            <div class="contentImgMulti"></div>
+                        -->
                     <ul>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Weizen</span> - Vom Brötchen, über Futtermittel bis hin zum Weißbier. Weizen ist in vielen Lebensmitteln 
                             enthalten und spielt in anderen Industrien sowie der Produktion von tierischen Produkten 
                             wie Eier, Milch und Fleisch eine Rolle.
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Roggen</span> - Neben seiner Hauptnutzung als gesundes „Vollkorn“ für Gebäcke findet man den Roggen auch bei der Bierherstellung. Er wird 
                             begleitend zur Gerste als Ergänzung bei der Malzherstellung genutzt oder ersetzt Sie gänzlich. 
                             Des weiteren wird Roggen auch in der Papier und Klebstoff Herstellung verwendet.
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Dinkel</span> - Sehr verträgliches Getreide. Wunderbar als Weizenersatz geeignet hat Dinkel einen leicht nussigen Geschmack. 
                             Neben den klassischen Gebäcken wird Dinkel(mehl) oft für die Herstellung von Nudeln und 
                             anderen „gesunden“ Snacks genutzt. Ferner dient es, wie Roggen, 
                             als Ergänzung beim Bierbrauen.
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Gerste</span> - Hauptsächlich bekannt als Gerstenmalz für Bier (und Whiskey), wird Gerste ebenfalls oft als 
                             Futtermittel bei der Rinder und Schweinehaltung genutzt. Ferner wird es auch in Eintöpfen und Suppen 
                             aufgrund seiner Textur und des nussigen Geschmacks verwendet.
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Hafer</span> - 
                         </li>
                         <li>
@@ -84,6 +91,7 @@
                             hautpflegend wirken.
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Mais</span> - Obwohl ikonisch als Kolben oder Körner in der Dose bekannt, wird der Großteil der 
                             globalen Maisproduktion an Tiere verfüttert. Wichtig hierbei anzumerken ist, dass sich Mais 
                             für Menschen (fachlich Zuckermais) und für Tiere genetisch unterscheiden, hauptsächlich im 
@@ -92,12 +100,13 @@
                             (mehr dazu bei Futtermittel).
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Reis</span> - Überwiegend als Lebensmittel für Menschen genutzt, findet er auch Anwendung in 
                             der Herstellung von Schnaps und Wein. 
                         </li>
                         <li>
                             <span class="listStart">Triticale</span> - Eine Kreuzung aus Weizen und Roggen. Seltener für Lebensmittel verwendet, 
-                            dafür nicht weniger schmackhaft. Es wird oft zur Tierfütterung verwendet oder als 
+                            dafür nicht weniger schmackhaft. Oft wird es zur Tierfütterung genutzt oder als 
                             Erosionsschutz in Hanglage, aufgrund seiner tiefen Wurzeln, gepflanzt.
                         </li>
                     </ul>
@@ -109,18 +118,21 @@
                     </p>
                     <ul>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Körnergetreide</span> - Ob Weizen, Roggen Triticale oder andere. Die meisten Körnersorten werden auch als solche, 
                             oder als Getreideschrot, verfüttert. Bei Hühnern z.B. stellen sie sogar den Hauptbestandteil der Nahrungsaufnahme. 
                             Man denke an ein Maishändl, dass auf strenger Diät ist.
 
                         </li>
                         <li>
+                            <div class="contentImgMulti"></div>
                             <span class="listStart">Maissilage</span> - Anders als beim Körnermais, wird für die Maissilage die ganze Pflanze 
                             geerntet. Das heißt, dass die Kolben zusammen mit der Pflanze verarbeitet werden. Durch 
                             eine Messerwalze wird die Pflanze auf meist 8-25mm Körnung gehäckselt 
                             (mehr zum Ernteprozess unter Agrartechnik). [BILD Maishäckselgut]
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             <span class="listStart">Corn-Cob-Mix</span> - Kurz CCM, ist eine i2termischung bei dem Sowohl die Körner als auch der Strunk zu Schrot 
                             verarbeitet werden. Dieses Schrot, oder auch CCM-Silage, wird in Silos zu 
                             Konservierungszwecken fermentiert. Es besticht durch seine herausragenden Energiewerte 
@@ -132,16 +144,19 @@
                     <p></p>
                     <ul>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             Baumwolle - Ein essenzieller Bestandteil unseres Lebens. Von der Kleidung bis hin zum Verbandszeug ist Baumwolle oft anzutreffen. 
                             Durch die industrielle Ernte ist Kleidung zum sehr erschwinglichen Gut geworden.
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             Gewürze
                         </li>
                         <li>
+                            <div class="contentImgSingle"><img src="bilder/tbdGBasic.png" alt="" /></div>
                             Wein - Man unterscheidet zwischen roten und weißen Trauben. Aus diesen kann wiederrum Rot- oder Weißwein, 
                             ferner auch rosé oder orange, sowie Perlwein hergestellt werden. Die bekannte Traube kann also sowohl als 
-                            Frucht, aber auch als alkoholisches Getränk genossen werden. Der Weinanbau braucht 
+                            Frucht, aber auch als (alkoholisches) Getränk genossen werden. Der Weinanbau braucht 
                             spezielles Gerät zur Instandhaltung und Ernte. Alternativ wird diese noch händisch eingefahren.
                         </li>
                     </ul>
