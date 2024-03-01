@@ -66,4 +66,7 @@ Tierhaltung im Detail
 Atypische Prozeduren
 --Klauenschneiden
 
-Tieri
+Tierische Produkte
+Rohstoffe
+--Milch(kanne)
+--Eier
