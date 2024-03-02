@@ -216,7 +216,7 @@ a:visited {
     align-items: center;
 }
 .contentImgSingle img {
-    max-height: 300px;
+    max-height: 270px;
 }
 .contentImgMulti {
     display: flex;
