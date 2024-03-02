@@ -7,18 +7,19 @@ Ackerbau
 -Hirse
 -Mais
 -Reis
-
+check
 
 Futtermittel
 -Körnergetreide (-Mix?)
 -Maissilage (+Silo?)
 -CCM
+check
 
 Nutzpflanzen
 -Baumwolle
 -Gewürze/Pfefferbaum
 -Wein-(reben/fässer/keller)
-
+check
 
 Agrartechnik
 Erntemaschinen
@@ -30,12 +31,15 @@ Erntemaschinen
 --Turm
 -Baumwollvollernter
 -Traubenvollernter
+check
+
 
 Zugmaschinen & Anbaugeräte
 Grünlandtechnik
 -Mähwerk
 -Schwader
 -Ballenpresse
+check
 
 Bodenbearbeitung
 -Pflug
