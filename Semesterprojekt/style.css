@@ -383,4 +383,11 @@ a:visited {
     .containerBlur .blurIcon:hover {
         transform: scale(1);
         opacity: 1;
+<<<<<<< Updated upstream
     }}
+=======
+    }
+    .dropdown-content {
+        width: 60vw;
+    }
+>>>>>>> Stashed changes
