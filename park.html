@@ -11,7 +11,7 @@
         <img src="https://raw.githubusercontent.com/biblehrer/biblehrer.github.io/main/Bilder/Dog.png" id="dog">
 
         <div>
-            <img src="https://raw.githubusercontent.com/biblehrer/biblehrer.github.io/main/Bilder/arr-up.png" class="up"  onclick="dog(1)">
+            <img src="https://raw.githubusercontent.com/biblehrer/biblehrer.github.io/main/Bilder/arr-up.png" class="up" onclick="dog(1)">
             <img src="https://raw.githubusercontent.com/biblehrer/biblehrer.github.io/main/Bilder/arr-down.png" class="down" onclick="dog(3)">
             <img src="https://raw.githubusercontent.com/biblehrer/biblehrer.github.io/main/Bilder/arr-right.png" class="right" onclick="dog(2)">
             <img src="https://raw.githubusercontent.com/biblehrer/biblehrer.github.io/main/Bilder/arr-left.png" class="left" onclick="dog(4)">
@@ -21,11 +21,11 @@
 
 
     <script>
+        dog = document.getElementById("dog");
+        let xR = dog.style.right;
+        let yB = dog.style.bottom;
         function dog(direction) {
             console.log(direction);
-            dog = document.getElementById("dog");
-            var xR = dog.style.right;
-            var yB = dog.style.bottom;
             switch(direction) {
                 case 1: if (yB < (window.innerHeight-50)){yB += 50;} else break;
                 case 2: if (x > 49){x -= 50;} else break;
@@ -34,6 +34,11 @@
             }
             dog.style.right = xR.toString()+"px";
             dog.style.bottom = yB.toString()+"px";
+        }
+        function resetBall() {
+            ball = document.getElementById("ball");
+            ball.style.right = Math.floor(Math.random() * window.innerWidth) + 1;
+            ball.style.bottom = Math.floor(Math.random() * window.innerHeight) + 1;
         }
     </script>
 </html>
