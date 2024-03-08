@@ -4,6 +4,7 @@
 
       <link rel="stylesheet" href="https://biblehrer.github.io/Aufgaben/park.css">
 	    <title> Dog Park </title>		
+        
 	</head>
 	<body>	
 
@@ -21,22 +22,24 @@
 
 
     <script>
-        dog = document.getElementById("dog");
-        let xR = dog.style.right;
-        let yB = dog.style.bottom;
+        let doggo = document.getElementById("dog");
+        let y=1;
+        let x=600;
         function dog(direction) {
             console.log(direction);
             switch(direction) {
-                case 1: if (yB < (window.innerHeight-50)){yB += 50;} else break;
-                case 2: if (x > 49){x -= 50;} else break;
-                case 3: if (yB < 50){yR += 50;} else break;
-                case 4: if (xR < (window.innerWidth-50)){y -= 50;} else break;
+                case 1: y=y+50;break;
+                case 2: x=x-50;break;
+                case 3: y=y-50;break;
+                case 4: x=x+50;
             }
-            dog.style.right = xR.toString()+"px";
-            dog.style.bottom = yB.toString()+"px";
+            doggo.style.bottom = y+"px";
+            console.log("y="+y+"px");
+            doggo.style.right = x+"px";
+            console.log("x="+x+"px");
         }
         function resetBall() {
-            ball = document.getElementById("ball");
+            let ball = document.getElementById("ball");
             ball.style.right = Math.floor(Math.random() * window.innerWidth) + 1;
             ball.style.bottom = Math.floor(Math.random() * window.innerHeight) + 1;
         }
