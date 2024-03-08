@@ -22,7 +22,18 @@
 
     <script>
         function dog(direction) {
-            
+            console.log(direction);
+            dog = document.getElementById("dog");
+            var xR = dog.style.right;
+            var yB = dog.style.bottom;
+            switch(direction) {
+                case 1: if (yB < (window.innerHeight-50)){yB += 50;} else break;
+                case 2: if (x > 49){x -= 50;} else break;
+                case 3: if (yB < 50){yR += 50;} else break;
+                case 4: if (xR < (window.innerWidth-50)){y -= 50;} else break;
+            }
+            dog.style.right = xR.toString()+"px";
+            dog.style.bottom = yB.toString()+"px";
         }
     </script>
 </html>
